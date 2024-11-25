@@ -26,45 +26,43 @@ input {
 }
 
 body{
-  height: 100vh;
-  
+  display: flex;
+  flex-direction: column;
 }
 
-.header{
-  display: flex;
-  justify-content: space-between;
-  margin: 0px;
-  padding: 0px;
-}
-
-.footer{
-  display: flex;
-  justify-content: space-between;
-}
-
-.left-links {
-  display: flex;
-  gap: 15px;
-  list-style: none;
-  padding: 5px 10px;
-
-}
-
-.right-links{
-  display: flex;
-  gap: 15px;
-  list-style: none;
-  padding: 5px 10px;
+button {
+  padding: 8px 16px;
 }
 
 .content{
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex: 1;
 }
 
-img{
-  padding: 10px;
+a {
+  color: #666;
+  text-decoration: none;
 }
 
-.input{
-  margin-bottom: 20px;
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.footer {
+  background: #eee;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 16px
 }
